@@ -9,7 +9,7 @@ Follow these steps to run the Disney Cartoons React web application on your loca
 1. Clone the repository:
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/9802HEMENSAN/Disney-Island.git
    ```
 
 2. Navigate to the project directory:
@@ -42,7 +42,7 @@ Follow these steps to run the Disney Cartoons React web application on your loca
 
 ### Character Details Page
 
-- Clicking on a character card will navigate you to the dynamic route `/character/<character_id>`.
+- Clicking on a character card will navigate you to the dynamic route `/character/<id>`.
 - The character details page displays the following information:
   - Image of the Character
   - Name
