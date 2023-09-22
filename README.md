@@ -1,70 +1,78 @@
-# Getting Started with Create React App
+# Disney Cartoons React Web Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the Disney Cartoons React web application! This single-page application allows you to access details of Rick and Morty characters, featuring pagination, filtering, and search functionalities. Below, you'll find instructions on how to run the app and an overview of its key features.
 
-## Available Scripts
+## Getting Started
 
-In the project directory, you can run:
+Follow these steps to run the Disney Cartoons React web application on your local machine:
 
-### `npm start`
+1. Clone the repository:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+   ```bash
+   git clone <repository-url>
+   ```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. Navigate to the project directory:
 
-### `npm test`
+   ```bash
+   cd disney-cartoons
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. Install the required dependencies:
 
-### `npm run build`
+   ```bash
+   npm install
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4. Start the development server:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```bash
+   npm start
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+5. Open your web browser and access the app at [http://localhost:3000](http://localhost:3000).
 
-### `npm run eject`
+## App Features
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Rick and Morty Character Cards
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- On the initial load of the page, the app will render Rick and Morty characters in the form of cards.
+- Each card includes the character's picture, name, and status (Alive, Dead, or Unknown).
+- Pagination is implemented, displaying 12 characters per page in a grid layout (4 rows x 3 columns).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Character Details Page
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Clicking on a character card will navigate you to the dynamic route `/character/<character_id>`.
+- The character details page displays the following information:
+  - Image of the Character
+  - Name
+  - Status
+  - Species
+  - Type
+  - Gender
+  - Origin
+  - Location
 
-## Learn More
+### Search Functionality
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- There is a search bar at the top of the page that allows you to search for characters.
+- The search functionality instantly updates the displayed character cards as you type.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Filtering Functionality
 
-### Code Splitting
+- You can filter characters by the following criteria:
+  - Status (Alive, Dead, or Unknown) using a dropdown menu.
+  - Gender (Male or Female) using a dropdown menu.
+- The filters are applied instantly, and the character cards are updated accordingly.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Seamless Integration
 
-### Analyzing the Bundle Size
+- Pagination, search, and filter functionalities work together seamlessly, allowing you to refine your character search and explore the Rick and Morty universe.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## API Documentation
 
-### Making a Progressive Web App
+For more details about the Rick and Morty API and its supported query parameters, please refer to the [API documentation](https://rickandmortyapi.com/documentation/).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Enjoy exploring the world of Rick and Morty with the Disney Cartoons React web application! If you have any questions or encounter issues, please feel free to reach out to us.
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Happy exploring!**
